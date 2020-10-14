@@ -1,33 +1,29 @@
 #!/bin/busybox sh
 
-if [[ ! -z $SSID ]] 
+if [[ ! -z $CHECK_CONN_FREQ ]] 
     then
-        ssid="-s $SSID"
+        freq=$CHECK_CONN_FREQ
     else
-        ssid=''
-fi
-
-if [[ ! -z $PASS ]] 
-    then
-        ssid="-p $PASS"
-    else
-        pass=''
+        freq=120
 fi
 
 
 sleep 5
 
 while [[ true ]]; do
-    wget --spider --no-check-certificate 1.1.1.1 2>&1
+    echo "Checking internet connectivity ..."
+    wget --spider --no-check-certificate 1.1.1.1 > /dev/null 2>&1
 
     if [ $? -eq 0 ]; then
-        printf 'Skipping WiFi Connect\n'
+        echo "Your device is already connected to the internet."
+        echo "Skipping setting up Wifi-Connect Access Point. Will check again in $freq seconds"
     else
-        printf 'Starting WiFi Connect\n'
-        DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/src/app/wifi-connect -u /usr/src/app/ui $ssid $pass
+        echo "Your device is already connected to the internet."
+        echo "Starting up Wifi-Connect.\n Connect to the Access Point and configure the SSID and Passphrase for the network to connect to."
+        DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/src/app/wifi-connect -u /usr/src/app/ui
     fi
-
-    sleep 120
+    
+    sleep $freq
 
 done
 

@@ -44,10 +44,27 @@ _Dockerfile.template_
 FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
 ```
 
+`balenablocks/wifi-connect` is built for the following archs:
+
+- `aarch64`
+- `armv7hf`
+- `amd64`
+- `rpi`
+
 ## Customisation
 
-- Set the SSID by setting an environment variable `SSID` to the value you want
-- Password protect the Access Point by setting `PASS` to the required value
+`balenablocks/wifi-connect` can be configured via the following variables:
+
+| Environment Variable    | Default                             | Description                                                                   |
+| ----------------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
+| `PORTAL_DHCP_RANGE`     | `192.168.42.2,192.168.42.254`       | DHCP range of the captive portal WiFi network                                 |
+| `PORTAL_GATEWAY`        | `192.168.42.1`                      | Gateway of the captive portal WiFi network                                    |
+| `PORTAL_LISTENING_PORT` | `80`                                | Listening port of the captive portal web server                               |
+| `PORTAL_INTERFACE`      | first `managed` interface           | Wireless network interface to be used by WiFi Connect                         |
+| `PORTAL_PASSPHRASE`     | no passphrase                       | WPA2 Passphrase of the captive portal WiFi network                            |
+| `PORTAL_SSID`           | WiFi Connect                        | SSID of the captive portal WiFi network                                       |
+| `ACTIVITY_TIMEOUT`      | `0` - no timeout                    | Exit if no activity for the specified timeout (seconds)                       |
+| `CHECK_CONN_FREQ`       | `120` - specified number of seconds | The frequency with which to check if the device is connected to the internet. |  |
 
 You can refer to the [docs](https://www.balena.io/docs/learn/manage/serv-vars/#environment-and-service-variables) on how to set environment or service variables
 
