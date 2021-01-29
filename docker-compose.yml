@@ -1,0 +1,11 @@
+version: "2.1"
+
+services:
+  wifi-connect:
+    image: balenablocks/wifi-connect:raspberrypi3
+    restart: always
+    network_mode: host
+    privileged: true
+    labels:
+      io.balena.features.dbus: "1"
+      io.balena.features.firmware: "1"
