@@ -1,0 +1,19 @@
+version: "2"
+slug: "wificonnect"
+name: "wifi-connect"
+type: "sw.application"
+assets:
+  - url: "https://github.com/balenablocks/wifi-connect"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/balenablocks/wifi-connect/master/logo.png"
+    name: "logo"
+data:
+  description: "a utility for dynamically setting the WiFi configuration via a captive portal"
+  defaultDeviceType: "raspberry-pi"
+  supportedDeviceTypes:
+    - "raspberry-pi"
+    - "raspberry-pi2"
+    - "raspberrypi3"
+    - "raspberrypi4-64"
+    - "fincm3"
+    - "intel-nuc"
