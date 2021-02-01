@@ -2,7 +2,7 @@ version: "2.1"
 
 services:
   wifi-connect:
-    image: balenablocks/wifi-connect:raspberrypi3
+    image: balenablocks/wifi-connect:rpi
     restart: always
     network_mode: host
     privileged: true
