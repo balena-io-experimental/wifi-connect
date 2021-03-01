@@ -1,22 +1,23 @@
-name: "wifi-connect"
-description: "A utility for dynamically setting the WiFi configuration via a captive portal."
-version: x.x.x
-type: "sw.application"
+name: wifi-connect
+description: A utility for dynamically setting the WiFi configuration via a captive portal.
+version: 0.0.3
+type: sw.application
 assets:
   repository:
-    type: "blob.asset"
+    type: blob.asset
     data:
-      url: "https://github.com/balenablocks/wifi-connect"
+      url: 'https://github.com/balenablocks/wifi-connect'
   logo:
-    type: "blob.asset"
+    type: blob.asset
     data:
-      url: "https://raw.githubusercontent.com/balenablocks/wifi-connect/master/logo.png"
+      url: >-
+        https://raw.githubusercontent.com/balenablocks/wifi-connect/master/logo.png
 data:
-  defaultDeviceType: "raspberry-pi"
+  defaultDeviceType: raspberry-pi
   supportedDeviceTypes:
-    - "raspberry-pi"
-    - "raspberry-pi2"
-    - "raspberrypi3"
-    - "raspberrypi4-64"
-    - "fincm3"
-    - "intel-nuc"
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi4-64
+    - fincm3
+    - intel-nuc
