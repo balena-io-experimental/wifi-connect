@@ -44,6 +44,8 @@ _Dockerfile.template_
 FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
 ```
 
+### Supported Architectures
+
 `balenablocks/wifi-connect` is built for the following archs:
 
 - `aarch64`
