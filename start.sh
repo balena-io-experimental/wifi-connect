@@ -19,7 +19,7 @@ echo "WiFi Connect starting...\n"
 sleep 5
 
 while [[ true ]]; do
-    if [ $verbose -eq 1 ]; then echo "Checking internet connectivity ..."; fi
+    if [ $verbose -eq 1 ]; then echo "Checking !!!!!! internet connectivity ..."; fi
     wget --spider --no-check-certificate 1.1.1.1 > /dev/null 2>&1
 
     if [ $? -eq 0 ]; then
