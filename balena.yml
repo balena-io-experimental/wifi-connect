@@ -6,18 +6,21 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balenablocks/wifi-connect'
+      url: "https://github.com/balenablocks/wifi-connect"
   logo:
     type: blob.asset
     data:
       url: >-
         https://raw.githubusercontent.com/balenablocks/wifi-connect/master/logo.png
 data:
-  defaultDeviceType: raspberry-pi
+  defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberry-pi
     - raspberry-pi2
     - raspberrypi3
+    - raspberrypi3-64
     - raspberrypi4-64
     - fincm3
     - intel-nuc
+    - jetson-nano
+    - beaglebone-black

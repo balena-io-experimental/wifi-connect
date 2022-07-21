@@ -67,7 +67,7 @@ FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
 | `PORTAL_SSID`           | WiFi Connect                        | SSID of the captive portal WiFi network                                       |
 | `ACTIVITY_TIMEOUT`      | `0` - no timeout                    | Exit if no activity for the specified timeout (seconds)                       |
 | `CHECK_CONN_FREQ`       | `120` - specified number of seconds | The frequency with which to check if the device is connected to the internet. |
-| `VERBOSE`               | none                                | Set `false` to silence the logging messages                                   |
+| `VERBOSE`               | none                                | Set `silent` to silence the logging messages                                  |
 
 You can refer to the [docs](https://www.balena.io/docs/learn/manage/serv-vars/#environment-and-service-variables) on how to set environment or service variables
 
