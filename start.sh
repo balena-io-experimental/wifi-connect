@@ -26,7 +26,7 @@ while [[ true ]]; do
         if [ $verbose -eq 1 ]; then echo "Your device is already connected to the internet.\nSkipping setting up Wifi-Connect Access Point. Will check again in $freq seconds."; fi        
     else
         if [ $verbose -eq 1 ]; then echo "Your device is not connected to the internet.\nStarting up Wifi-Connect.\n Connect to the Access Point and configure the SSID and Passphrase for the network to connect to."; fi        
-        DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/src/app/wifi-connect -u /usr/src/app/ui
+        DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/src/app/wifi-connect -u /usr/src/app/ui -o 3000
     fi
 
     sleep $freq
