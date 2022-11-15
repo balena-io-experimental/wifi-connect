@@ -6,12 +6,12 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balenablocks/wifi-connect'
+      url: 'https://github.com/balena-labs-projects/wifi-connect'
   logo:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/balenablocks/wifi-connect/master/logo.png
+        https://raw.githubusercontent.com/balena-labs-projects/wifi-connect/master/logo.png
 data:
   defaultDeviceType: raspberry-pi
   supportedDeviceTypes:
