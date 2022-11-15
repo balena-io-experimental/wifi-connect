@@ -2,7 +2,7 @@ version: "2.1"
 
 services:
   wifi-connect:
-    image: balenablocks/wifi-connect:rpi
+    image: bh.cr/balenalabs/wifi-connect-rpi
     restart: always
     network_mode: host
     privileged: true

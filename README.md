@@ -1,4 +1,4 @@
-# balenablocks/wifi-connect
+# balena-labs-projects/wifi-connect
 
 The wifi-connect block is a docker image that runs [wifi-connect](https://github.com/balena-io/wifi-connect) which is a utility for dynamically setting the WiFi configuration on a Linux device via a captive portal.
 
@@ -11,7 +11,7 @@ version: "2.1"
 
 services:
   wifi-connect:
-    image: balenablocks/wifi-connect:<device arch name>
+    image: bh.cr/balenalabs/wifi-connect-<device arch name>
     restart: always
     network_mode: host
     privileged: true
@@ -41,12 +41,12 @@ services:
 _Dockerfile.template_
 
 ```dockerfile
-FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
+FROM bh.cr/balenalabs/wifi-connect-%%BALENA_ARCH%%
 ```
 
 ### Supported Architectures
 
-`balenablocks/wifi-connect` is built for the following archs:
+`bh.cr/balenalabs/wifi-connect` is built for the following archs:
 
 - `aarch64`
 - `armv7hf`
@@ -55,7 +55,7 @@ FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
 
 ## Customisation
 
-`balenablocks/wifi-connect` can be configured via the following variables:
+`bh.cr/balenalabs/wifi-connect` can be configured via the following variables:
 
 | Environment Variable    | Default                             | Description                                                                   |
 | ----------------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
