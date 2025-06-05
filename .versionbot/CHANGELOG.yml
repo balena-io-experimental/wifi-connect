@@ -1,0 +1,128 @@
+- commits:
+    - subject: Resolve connectivity detection issue
+      hash: a7f1dc365826b64e538a3dbabbdc1c28fd8eea38
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 0.2.1
+  title: ""
+  date: 2025-06-05T21:20:03.354Z
+- version: 0.2.0
+  date: 2022-05-13T08:06:05Z
+  commits:
+    - hash: f406c551d5e6acdc83172f6dcb71ebacff179ee5
+      author: Alex
+      footers:
+        change-type: minor
+        signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+      subject: Add verbose option
+      body: ""
+- version: 0.1.0
+  date: 2022-05-12T15:24:31Z
+  commits:
+    - hash: d72ba7d00a7e909363fe2050662b3b4585dc60ca
+      author: Alex
+      footers:
+        change-type: minor
+        signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+      subject: Adds github action for releasing
+      body: ""
+    - hash: 328df95c2b7f2e3c95a7cffc838a12c3cf0910ea
+      author: Alex
+      footers:
+        change-type: patch
+        signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+      subject: bump action version
+      body: ""
+- version: 0.0.5
+  date: 2022-03-07T18:43:34Z
+  commits:
+    - hash: 5e3abf99c18f564cc56895b8f7be62805a354f61
+      author: Alex
+      footers:
+        change-type: patch
+        signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+      subject: Fixes supported Archs in readme
+      body: ""
+- version: 0.0.4
+  date: 2021-07-19T14:41:57Z
+  commits:
+    - hash: 11c8acd136d515cb4e9b20c96da40d181749b6ad
+      author: Tommy Goode
+      subject: "patch: fix inaccurate log message when internet connection not
+        available"
+      body: ""
+- version: 0.0.3
+  date: 2021-03-01T13:32:31Z
+  commits:
+    - hash: 0f5d4cde172088d96245babb7052f024afccf85f
+      author: Tomás Migone
+      footers:
+        change-type: patch
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: "meta: run versionist to update balena.yml version"
+      body: ""
+- version: 0.0.2
+  date: 2021-02-26T13:33:46Z
+  commits:
+    - hash: 04abb688492b8f2f500e7cf06c32ba168b8c99ec
+      author: Tomás Migone
+      footers:
+        change-type: patch
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: "meta: enable versionist"
+      body: ""
+    - hash: ecf14a002f366b18c1844ef0187cea19e09c9d3e
+      author: Tomás Migone
+      footers:
+        change-type: patch
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: "meta: enable versionist"
+      body: take 2
+    - hash: 1f4dd9eadbe958cc871499766898e07d6f49e141
+      author: Tomás Migone
+      footers:
+        change-type: patch
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: "meta: enable versionist"
+      body: ""
+    - hash: 82e5ff0100f867a69f9a25c5b2457a60cbe2506e
+      author: Phil Wilson
+      footers:
+        change-type: patch
+        signed-off-by: Phil Wilson <phil@balena.io>
+      subject: YAML update
+      body: ""
+    - hash: 2f2c1457badf8c0b9c01084c195ad2453c66a69b
+      author: Phil Wilson
+      footers:
+        change-type: patch
+        signed-off-by: Phil Wilson <phil@balena.io>
+      subject: add repo.yml
+      body: ""
+    - hash: 5bf056dd9ae6f90219045f0aabafb14a9ab41553
+      author: Phil Wilson
+      footers:
+        change-type: patch
+        signed-off-by: Phil Wilson <phil@balena.io>
+      subject: updates
+      body: ""
+    - hash: e203c80c91b2c93ca01792c4944cb21c8eefffdc
+      author: Phil Wilson
+      footers:
+        change-type: patch
+        signed-off-by: Phil Wilson <phil@balena.io>
+      subject: hub meta
+      body: ""
+    - hash: 116bf882ec1b31d5ddc5f1474b924b9702ce6d9f
+      author: Rahul Thakoor
+      footers:
+        change-type: patch
+        signed-off-by: Rahul Thakoor <rahul@balena.io>
+      subject: Use wifi-connect built-in configs
+      body: ""
